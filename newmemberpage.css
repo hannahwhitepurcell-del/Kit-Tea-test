@@ -1,0 +1,62 @@
+body{
+ font-family: Arial,Helvetica,sans-serif;
+ /*Sets the for the WHOLE page*/
+ 
+ line-height:1.4;
+ /* add some space between line of text to make text more readable
+ */
+ color: #161515;
+ /* a dark grey for text
+ */
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e10a0a;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f8f7f7;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #e10a0a;
+  color: black;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }}
